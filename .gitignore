@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+# un-needed images
+src/page.ico
+src/page2.ico
+
 # misc
 .DS_Store
 .env.local
