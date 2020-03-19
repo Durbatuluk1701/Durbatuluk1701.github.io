@@ -1,9 +1,23 @@
 body {
-    background-color: aqua;
+    background-color: black;
     margin: 0;
 }
 
+.sideBar {
+    width: 10%;
+    background: linear-gradient(red, orange, yellow, green, blue, indigo);
+    box-sizing: border-box; 
+}
+
+#subBodyContainer {
+    width: 100%;
+    display: flex;
+}
+
 #bodyContainer {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
     background-color: crimson;
     width: 100%;
     height: 100%;
@@ -13,10 +27,44 @@ body {
     background-color: darkgreen;
 }
 
+.navBar {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.navBar > a {
+    color: white;
+    margin: 0px;
+    border: 1px solid black;
+    text-align: center;
+    width: 50%;
+}
+
+.navBar > a:hover {
+    color: black;
+    background-color: aqua;
+}
+
 #contentContainer {
     background-color: blueviolet;
+    height: 1400px;
+    width: 100%;
 }
 
 #footerContainer {
     background-color: orange;
+}
+
+.footerLinks {
+    color: black;
+}
+
+.footerLinks:hover {
+    color: blue;
+}
+
+.footerLinks:visited {
+    color: purple;
 }

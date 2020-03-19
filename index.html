@@ -3,24 +3,35 @@
     <title>Will Thomas</title>
     <link rel="shortcut icon" type="image/x-icon" href="src/highquality.ico" />
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="bodyContainer">
         <div id="headContainer">
-            <nav>
-                <a href="/#power">Home</a>
-                <a href="/projects">Projects</a>
-                <a href="/skills">Skills</a>
-                <a href="/contact">Contact</a>
-            </nav>
             <h1>Will Thomas</h1>
             <p>This is my personal website</p>
+            <div class="navBar">
+                <a onclick="goPow()">Pow</a>
+                <a onclick="goProjects()">Try</a>
+            </div>
         </div>
-        <div id="contentContainer">
-            <h5>Container Info</h5>
+        <div id="subBodyContainer">
+            <div class="sideBar" id="leftSideBar">
+
+            </div>
+            <div id="contentContainer">
+                <h5>Container Info</h5>
+            </div>
+            <div class="sideBar" id="rightSideBar">
+                
+            </div>
         </div>
         <div id="footerContainer">
-            <h2>Footer</h2>
+            <p>
+                <b>Will Thomas</b>;
+                Email: <a class="footerLinks" href="mailto:30wthomas@gmail.com">30wthomas@gmail.com</a>; 
+                Link to my <a class="footerLinks" href="https://www.linkedin.com/in/will-thomas-4456b5174/">LinkedIn</a>;
+            </p>
         </div>
     </div>
 </body>
