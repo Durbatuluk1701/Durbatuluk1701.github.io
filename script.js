@@ -1,4 +1,4 @@
-const goProjects = () => {
+const displayHome = () => {
     document.getElementById("leftSideBar").style.background = "aqua";
 };
 
