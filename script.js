@@ -1,10 +1,9 @@
 const displayHome = () => {
     document.getElementById("contentContainer").innerHTML = `
-    <h1>Hello</h1>
+    <h1>Howdy</h1>
     <h2>Me</h2>
     `;
 };
-
 
 setInterval(() => {
     let likeArray = [
@@ -12,7 +11,9 @@ setInterval(() => {
         "DANCE",
         "SING",
         "ANALYZE",
-        "PROGRAM"
+        "PROGRAM",
+        "BAKE",
+        "COOK"
     ]
     let rand = Math.floor(Math.random()*likeArray.length);
     document.getElementById("randomLike").innerHTML = `${likeArray[rand]}`;

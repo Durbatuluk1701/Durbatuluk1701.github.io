@@ -1,59 +1,61 @@
 body {
-    background-color: black;
     margin: 0;
 }
 
 .sideBar {
-    width: 10%;
+    width: 10vw;
     background: linear-gradient(red, orange, yellow, green, blue, indigo);
     box-sizing: border-box; 
 }
 
 #subBodyContainer {
-    width: 100%;
+    width: 100vw;
     display: flex;
+    margin: 0px;
 }
 
 #bodyContainer {
     margin: 0px;
     border: 0px;
     padding: 0px;
-    background-color: crimson;
-    width: 100%;
-    height: 100%;
 }
 
 #headContainer {
-    width: 100%;
+    width: 100vw;
     background-image: url("src/background.jfif");
-    background-size: cover;
-    background-position-x: 0px;
     background-position-y: bottom;
+    background-size: cover;
+    height: 22vh;
 }
 
 #subHeadContainer {
-    display: flex;
+    height: 18vh;
+    width: 100%;
 }
 
 #personalProfile {
-    width: 33.3vw;
-    height: 20vh;
-    margin-left: 66vw;
+    height: fit-content;
+    background-color: aqua;
+    opacity: 66%;
+    border-radius: 0% 0% 0% 30%;
+    float: right;
 }
 
 #personalProfile > * {
-    background-color: aqua;
     text-align: right;
-    opacity: 66%;
     margin: 0px;
-    padding: 5px 20px;
+    padding: 5px 25px;
+    text-shadow: 1px 1px white;
 }
 
 .navBar {
     background-color: blue;
     width: 100%;
-    height: 100%;
+    height: 5vh;
+    min-height: 12px;
     display: flex;
+    line-height: 4vh;
+    font-size: auto;
 }
 
 .navBar > a {
@@ -62,6 +64,7 @@ body {
     border: 1px solid black;
     text-align: center;
     width: 25%;
+    min-width: auto;
 }
 
 .navBar > a:hover {
@@ -72,22 +75,31 @@ body {
 
 #contentContainer {
     background-color: blueviolet;
-    height: 1400px;
+    height: auto;
     width: 100%;
+    padding: 0px 10px;
+    text-align: center;
+    min-height: 73vh;
 }
 
 #footerContainer {
-    background-color: orange;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    line-height: 5vh;
+    width: 100%;
+}
+
+#footerContainer > p {
+    margin: 0;
+    height: 5vh;
+    text-align: center;
 }
 
 .footerLinks {
-    color: black;
-}
-
-.footerLinks:hover {
     color: blue;
 }
 
-.footerLinks:visited {
+.footerLinks:hover, .footerLinks:visited {
     color: purple;
 }
