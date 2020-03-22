@@ -1,26 +1,27 @@
 const displayHome = () => {
-    document.getElementById("leftSideBar").style.background = "aqua";
+    document.getElementById("contentContainer").innerHTML = `
+    <h1>Hello</h1>
+    <h2>Me</h2>
+    `;
 };
 
-const goPow = () => {
-    document.getElementById("contentContainer").style.backgroundColor = "aqua";
-};
 
-var blurMessage = [
-    "Come Back!!!",
-    "WHY HAVE YOU FORSAKEN ME",
-    "Fine I didnt need you anyways",
-    "PLEASE PLEASE PLEASE",
-    "Fine"
-];
+setInterval(() => {
+    let likeArray = [
+        "CODE",
+        "DANCE",
+        "SING",
+        "ANALYZE",
+        "PROGRAM"
+    ]
+    let rand = Math.floor(Math.random()*likeArray.length);
+    document.getElementById("randomLike").innerHTML = `${likeArray[rand]}`;
+}, 10000)
 
 window.addEventListener("blur", () => {
-    console.log("Blurring");
-    var rand = Math.floor((Math.random() * 5));
-    document.title = blurMessage[rand];
+    document.title = "Come Back Soon!!!";
 })
 
 window.addEventListener("focus", () => {
-    console.log("Focussing");
     document.title = "Will Thomas";
 })
