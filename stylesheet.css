@@ -1,5 +1,6 @@
-body {
+* {
     margin: 0;
+    font-family: Tahoma, 'Times New Roman', Times, serif
 }
 
 .sideBar {
@@ -11,11 +12,9 @@ body {
 #subBodyContainer {
     width: 100vw;
     display: flex;
-    margin: 0px;
 }
 
 #bodyContainer {
-    margin: 0px;
     border: 0px;
     padding: 0px;
 }
@@ -63,7 +62,7 @@ body {
     margin: 0px;
     border: 1px solid black;
     text-align: center;
-    width: 25%;
+    width: 33.33%;
     min-width: auto;
 }
 
