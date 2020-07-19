@@ -6,11 +6,12 @@ const TextBoxItem: React.FC = (props) => {
   
   
     const addListItem = () => {
-      let addBox = document.getElementById("listAdded");
-      if (addBox && addBox.textContent) {
-        setWords([addBox.textContent , ...words]);
+      let addBox = document.getElementById("listAdded") as HTMLInputElement;
+      if (addBox) {
+        setWords([addBox.value , ...words]);
       }
     }
+    var itemKeys = 0;
 
     return (
       <div>
@@ -18,9 +19,11 @@ const TextBoxItem: React.FC = (props) => {
         <div>
           {
             words.map((word) => {
+              itemKeys++;
               let fontWeight = ["fizz", "buzz"].includes(word) ? 1000 : 100;
               return (
                 <h4
+                  key={itemKeys}
                   style={{
                     "fontWeight": fontWeight,
                     "display": "inline-block",
@@ -32,7 +35,7 @@ const TextBoxItem: React.FC = (props) => {
             })
           }
         </div>
-        <input id="listAdded"></input>
+        <input id="listAdded" />
         <button onClick={() => { addListItem() }}>Add Item</button>
       </div>
     );

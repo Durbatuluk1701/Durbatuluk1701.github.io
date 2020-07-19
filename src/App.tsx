@@ -1,6 +1,7 @@
 import React from "react"
 import TextBoxItem from "./TextBoxItem"
 import Counter from "./Counter"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 const App: React.FC = () => {
         
@@ -21,10 +22,21 @@ const App: React.FC = () => {
       })
 
     return (
-        <>
-            <Counter />
-            <TextBoxItem />
-        </>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <div>
+                <h1>HI</h1>
+              </div>
+            </Route>
+            <Route path="/counter">
+              <Counter />
+            </Route>
+            <Route path="/textbox">
+              <TextBoxItem />
+            </Route>
+          </Switch>
+        </Router>
     )
 }
 
