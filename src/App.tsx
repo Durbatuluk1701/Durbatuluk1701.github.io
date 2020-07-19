@@ -1,7 +1,9 @@
 import React from "react"
 import TextBoxItem from "./TextBoxItem"
 import Counter from "./Counter"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Header from "./Header"
+import DeadLanding from "./DeadLanding"
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 
 const App: React.FC = () => {
         
@@ -23,8 +25,10 @@ const App: React.FC = () => {
 
     return (
         <Router>
+          <Header/>
           <Switch>
-            <Route exact path="/">
+            <Redirect exact from="/" to="/home" />
+            <Route path="/home">
               <div>
                 <h1>HI</h1>
               </div>
@@ -34,6 +38,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/textbox">
               <TextBoxItem />
+            </Route>
+            <Route>
+              <DeadLanding />
             </Route>
           </Switch>
         </Router>
