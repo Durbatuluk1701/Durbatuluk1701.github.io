@@ -1,12 +1,15 @@
 import React from "react"
 
-const Header: React.FC = (props) => {
+interface HeaderTypes {
+    internalController: React.Dispatch<React.SetStateAction<string>>;
+}
 
+const Header = ({internalController}: HeaderTypes) => {
     return (
         <>
-            <a href="/home">Home</a>
-            <a href="/counter">Counter</a>
-            <a href="/textbox">TextBox</a>
+            <button onClick={() => internalController("/home")}>Home</button>
+            <button onClick={() => internalController("/counter")}>Counter</button>
+            <button onClick={() => internalController("/textbox")}>TextBox</button>
         </>
     )
 }

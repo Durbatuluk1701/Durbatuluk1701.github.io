@@ -1,12 +1,15 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
-const DeadLanding: React.FC = () => {
+interface HeaderTypes {
+    internalController: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const DeadLanding = ({internalController}: HeaderTypes) => {
     return (
         <>
             <h1>Avast Matey, you've reached the Dead Landing Page</h1>
             <h4>Use the top Nav Bar to return, or click this link</h4>
-            <Link to="/home"><b>Save Me</b></Link>
+            <button onClick={() => {internalController("/home")}}><b>Save Me</b></button>
         </>
     )
 }

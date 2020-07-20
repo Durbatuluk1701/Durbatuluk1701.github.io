@@ -1,11 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import TextBoxItem from "./TextBoxItem"
 import Counter from "./Counter"
 import Header from "./Header"
 import DeadLanding from "./DeadLanding"
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 
 const App: React.FC = () => {
+    const [internalRoute, setInternalRoute] = useState("/");
         
     var interval: NodeJS.Timeout;
   
@@ -22,28 +22,35 @@ const App: React.FC = () => {
         clearInterval(interval);
         document.title = "Will Thomas";
       })
+    const HomePage = () => {
+      return (
+        <div>
+          <h1>HI</h1>
+        </div>
+      )
+    }
+
+    interface RouteProps {
+      path: string;
+      component: JSX.Element
+    }
+
+    const Route = ({path, component}: RouteProps): JSX.Element => {
+      if (internalRoute === path) {
+        return (component)
+      }
+      return <></>
+    }
 
     return (
-        <Router>
-          <Header/>
-          <Switch>
-            <Redirect exact from="/" to="/home" />
-            <Route path="/home">
-              <div>
-                <h1>HI</h1>
-              </div>
-            </Route>
-            <Route path="/counter">
-              <Counter />
-            </Route>
-            <Route path="/textbox">
-              <TextBoxItem />
-            </Route>
-            <Route>
-              <DeadLanding />
-            </Route>
-          </Switch>
-        </Router>
+      <>
+        <Header internalController={setInternalRoute}/>
+        <Route path="/" component={<HomePage />} />
+        <Route path="/home" component={<HomePage />} />
+        <Route path="/counter" component={<Counter />} />
+        <Route path="/textbox" component={<TextBoxItem />} />
+        <Route path="/404" component={<DeadLanding internalController={setInternalRoute}/>} />
+      </>
     )
 }
 
