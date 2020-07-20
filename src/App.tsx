@@ -25,7 +25,15 @@ const App: React.FC = () => {
     const HomePage = () => {
       return (
         <div>
-          <h1>HI</h1>
+          <h1>Hello There</h1>
+          <p style={{fontSize: "20px"}}>
+            This is my website, it is mostly just an exploration
+            into how farm I can push the static site capabilities of
+            GitHub Pages with my own Internal Routing components I have
+            made for React. All of this can be pushed into a single file,
+            with React Conditional rendering based upon given paths and 
+            the current state of the Internal Routing watch.
+          </p>
         </div>
       )
     }
