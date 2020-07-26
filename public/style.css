@@ -1,22 +1,41 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
 .sideBar {
-    height: auto; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    background-color: #c0c0c0;
+    padding: 0px 2%;
     left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    background-color: #f0f0f0;
+    top: 0;
+}
+
+.mainSection > div {
+    position: absolute;
+    top: 0px;
+    height: 100%;
 }
 
 .mainSection {
-    margin-left: 160px;
+    display: inline-block;
+    padding: 0px 1%;
+    width: 79%;
 }
 
 .sideBar > button {
-    margin: 10px auto;
-    font-size: auto;
+    font-size: 20px;
+    margin: 20px auto;
     height: auto;
     width: 100%;
     display: block;

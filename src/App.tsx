@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import TextBoxItem from "./TextBoxItem"
 import Counter from "./Counter"
-import Header from "./Header"
+import SideBar from "./SideBar"
 import DeadLanding from "./DeadLanding"
 import AboutMe from "./AboutMe"
 
@@ -53,7 +53,7 @@ const App: React.FC = () => {
 
     return (
       <>
-        <Header internalController={setInternalRoute}/>
+        <SideBar internalController={setInternalRoute}/>
         <div className="mainSection">
           <Route path="/" component={<HomePage />} />
           <Route path="/home" component={<HomePage />} />
