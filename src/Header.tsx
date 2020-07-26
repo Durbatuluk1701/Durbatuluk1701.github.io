@@ -6,11 +6,12 @@ interface HeaderTypes {
 
 const Header = ({internalController}: HeaderTypes) => {
     return (
-        <>
+        <div className="sideBar">
             <button onClick={() => internalController("/home")}>Home</button>
             <button onClick={() => internalController("/counter")}>Counter</button>
             <button onClick={() => internalController("/textbox")}>TextBox</button>
-        </>
+            <button onClick={() => internalController("/aboutme")}>About Me</button>
+        </div>
     )
 }
 

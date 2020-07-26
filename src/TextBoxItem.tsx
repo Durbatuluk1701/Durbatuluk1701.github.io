@@ -3,8 +3,6 @@ import React, { useState } from "react";
 const TextBoxItem: React.FC = (props) => {
     const [words, setWords] = useState<string[]>([]);
   
-  
-  
     const addListItem = () => {
       let addBox = document.getElementById("listAdded") as HTMLInputElement;
       if (addBox) {
