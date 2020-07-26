@@ -1,7 +1,46 @@
-button {
-    margin: 0px 5px;
+html {
+    height: 100%;
 }
 
-button:hover {
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.sideBar {
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    background-color: #c0c0c0;
+    padding: 0px 2%;
+    left: 0;
+    top: 0;
+}
+
+.mainSection > div {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+
+.mainSection {
+    display: inline-block;
+    padding: 0px 1%;
+    width: 79%;
+}
+
+.sideBar > button {
+    font-size: 20px;
+    margin: 20px auto;
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.sideBar > button:hover {
     background-color: aqua;
 }
