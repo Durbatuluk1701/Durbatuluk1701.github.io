@@ -4,6 +4,7 @@ import Counter from "./Counter"
 import SideBar from "./SideBar"
 import DeadLanding from "./DeadLanding"
 import AboutMe from "./AboutMe"
+import Calculator from "./Calculator"
 
 const App: React.FC = () => {
     const [internalRoute, setInternalRoute] = useState("/");
@@ -44,11 +45,11 @@ const App: React.FC = () => {
       component: JSX.Element
     }
 
-    const Route = ({path, component}: RouteProps): JSX.Element => {
+    const Route = ({path, component}: RouteProps): JSX.Element | null => {
       if (internalRoute === path) {
         return (component)
       }
-      return <></>
+      return null;
     }
 
     return (
@@ -60,6 +61,7 @@ const App: React.FC = () => {
           <Route path="/counter" component={<Counter />} />
           <Route path="/textbox" component={<TextBoxItem />} />
           <Route path="/aboutme" component={<AboutMe />} />
+          <Route path="/calculator" component={<Calculator />} />
           <Route path="/404" component={<DeadLanding internalController={setInternalRoute}/>} />
         </div>
       </>
