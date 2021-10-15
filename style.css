@@ -7,6 +7,14 @@ body {
     height: 100%;
 }
 
+p {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
 #root {
     height: 100%;
 }
