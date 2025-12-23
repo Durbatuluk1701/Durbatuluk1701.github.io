@@ -8,14 +8,23 @@ sort_by = "none"
 
 I am a Computer Science PhD student and Researcher focusing on **Formal Methods**, **Programming Languages**, and **Cybersecurity**.
 
-My work primarily bridges the gap between rigorous theory and practical systems security. I am currently investigating **Copland**, a DSL for remote attestation, and how to build verifiable control loops for non-deterministic systems (like LLMs).
+My work primarily bridges the gap between rigorous theory and practical systems security. I am currently investigating **Copland**, a DSL for remote attestation, formal methods, and language design.
 
 ### Current Status
-* **Researching:** The **CARE Pipeline** (Copland-Assisted Repair Engine) and the **HEAL Framework**.
-* **Teaching:** Instructor for *Formal Methods and Proving*.
-* **Building:** Tooling in **OCaml** and **Rust**.
+* **Research:** 
+  + Copland Infrastructure and Applications
+    + Copland Type System, Protocol Synthesis
+  + Attestation Protocols
+    + Attestation for Robust *Verified* Workflows
+    + The **CARE Pipeline** (Copland-Assisted Repair Engine) and the **HEAL Framework**.
+* **Teaching:** 
+  + Fall 2025 - Teaching Assistant for [**EECS 755: Software Modeling and Analysis**](https://perry.alexander.name/eecs755/)
+    * Lectured on **Verified Sorting Algorithms**, **Ltac & Hint Database Automation**, and **Dependent Types** in **Rocq**
+* **Building:** 
+  + Personal Projects: **OCaml** and **Rust**.
+  + Academic Pursuits: **Rocq**, **OCaml**, and **Verus**
 
 ### Contact
 * [GitHub](https://github.com/Durbatuluk1701)
-* Email: `[Your Email Here]`
-* [CV (PDF)](/cv.pdf)
+* Email: `30wthomas@ku.edu`
+<!-- * [CV (PDF)](/cv.pdf) -->

@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-  <link rel="stylesheet" href="{{ get_url(path=" style.css") }}">
+  <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
 </head>
 
 <body>
   <div class="container">
     <nav>
       <div class="logo">
-        <strong><a href="{{ get_url(path=" @/_index.md") }}" style="text-decoration: none;">{{ config.title
+        <strong><a href="{{ get_url(path="@/_index.md") }}" style="text-decoration: none;">{{ config.title
             }}</a></strong>
       </div>
       <ul>
-        <li><a href="{{ get_url(path=" @/research/_index.md") }}">Research</a></li>
-        <li><a href="{{ get_url(path=" @/notes/_index.md") }}">Notes</a></li>
-        <li><a href="{{ get_url(path=" cv.pdf") }}">CV</a></li>
+        <li><a href="{{ get_url(path="@/research/_index.md") }}">Research</a></li>
+        <li><a href="{{ get_url(path="@/notes/_index.md") }}">Notes</a></li>
+        <li><a href="{{ get_url(path="cv.pdf") }}">CV</a></li>
       </ul>
     </nav>
 
