@@ -1,0 +1,73 @@
+// Variables
+$bg-color: #fdfbf7; // "Warm Paper" off-white
+$text-color: #2c2c2c; // Soft black for reduced eye strain
+$accent-color: #b7410e; // "Rust" orange (nod to the language)
+$code-bg: #e8e8e8;
+$font-body: "Charter", "Bitstream Charter", "Sitka Text", Cambria, serif;
+$font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+// Reset & Base
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-body;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+// Layout Container
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+// Typography
+h1,
+h2,
+h3 {
+  font-family: $font-mono;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #000;
+}
+
+a {
+  color: $text-color;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $accent-color;
+    text-decoration-style: dashed;
+  }
+}
+
+// Navigation
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid $text-color;
+  padding-bottom: 1rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Code Blocks
+pre {
+  background: $code-bg;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.9em;
+}

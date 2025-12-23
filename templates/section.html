@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock title %}
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+
+<div class="section-content">
+  {{ section.content | safe }}
+</div>
+
+<ul style="list-style: none; padding: 0; margin-top: 2rem;">
+  {% for page in section.pages %}
+  <li style="margin-bottom: 1.5rem;">
+    <span style="font-family: monospace; color: #666; margin-right: 1rem;">
+      [{{ page.date | date(format="%Y-%m-%d") }}]
+    </span>
+    <a href="{{ page.permalink }}" style="font-size: 1.1em; font-weight: bold;">
+      {{ page.title }}
+    </a>
+    {% if page.description %}
+    <p style="margin: 0.2rem 0 0 0;">{{ page.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock content %}

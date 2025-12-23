@@ -1,0 +1,13 @@
+base_url = "https://durbatuluk1701.github.io"
+title = "Will Thomas"
+description = "PhD Student | Formal Methods & Security"
+
+
+[markdown]
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
+[extra]
+# Custom variables for use in templates
+github = "https://github.com/Durbatuluk1701"
+email = "30wthomas@ku.edu"

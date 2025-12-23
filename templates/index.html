@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="homepage-intro">
+  {{ section.content | safe }}
+</div>
+
+<div class="recent-updates" style="margin-top: 4rem;">
+  <hr style="border: 0; border-top: 1px dashed #ccc; margin-bottom: 2rem;">
+  <h3>Recent Lab Notes</h3>
+
+  <ul style="list-style: none; padding: 0;">
+    {# Fetch the notes section metadata #}
+    {% set notes = get_section(path="notes/_index.md") %}
+
+    {# Loop through the first 3 pages #}
+    {% for page in notes.pages | slice(end=3) %}
+    <li style="margin-bottom: 1rem;">
+      <span style="font-family: monospace; color: #666; margin-right: 1rem;">
+        [{{ page.date | date(format="%Y-%m-%d") }}]
+      </span>
+      <a href="{{ page.permalink }}" style="font-weight: bold;">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p style="margin-top: 1rem; font-size: 0.9em;">
+    <a href="{{ get_url(path=" @/notes/_index.md") }}">View all notes →</a>
+  </p>
+</div>
+{% endblock content %}
