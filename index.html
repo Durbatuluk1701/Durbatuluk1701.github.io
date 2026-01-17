@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Thomas</title>
+
+  <link rel="stylesheet" href="https://durbatuluk1701.github.io/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <strong><a href="https://durbatuluk1701.github.io/" style="text-decoration: none;">Will Thomas</a></strong>
+      </div>
+      <!-- <ul>
+        <li><a href="https://durbatuluk1701.github.io/research/">Research</a></li>
+        <li><a href="https://durbatuluk1701.github.io/notes/">Notes</a></li>
+        <li><a href="https://durbatuluk1701.github.io/cv.pdf">CV</a></li>
+      </ul> -->
+    </nav>
+
+    <main>
+      
+<div class="homepage-intro">
+  <h1 id="hello">Hello.</h1>
+<p>I am a Computer Science PhD student and Researcher focusing on <strong>Formal Methods</strong>, <strong>Programming Languages</strong>, and <strong>Cybersecurity</strong>.</p>
+<p>My work primarily bridges the gap between rigorous theory and practical systems security. I am currently investigating <a href="https://ku-sldg.github.io/copland/"><strong>Copland</strong></a>, a DSL for remote attestation, formal methods, and language design.</p>
+<h3 id="current-status">Current Status</h3>
+<ul>
+<li><strong>Research:</strong>
+<ul>
+<li>Copland Infrastructure and Applications (my PhD research)
+<ul>
+<li>Copland Type System: Statically verify that Copland protocols maintain protocol evidence usage (sub-structural type system) and that they are appraisable (provenance preserving types)</li>
+<li>System Informed Analysis: Defined a custom <em>measurable system model</em> to reason about real-world systems with attestation incorporated. Statically analyze Copland protocols with respect to this model to ensure desired security properties (e.g., executability of the protocol, sufficiency of the protocol to measure target properties).</li>
+<li>Protocol Synthesis: Automatically generate Copland protocols from <em>measurable systems</em> that ensure the type checking and system analysis properties above.</li>
+</ul>
+</li>
+<li>Attestation Protocols
+<ul>
+<li>Attestation for Robust <em>Verified</em> Workflows</li>
+<li>The <strong>CARE Pipeline</strong> (Copland-Assisted Repair Engine) and the <strong>HEAL Framework</strong> (Heuristic Evaluation and Attestation Loop).
+<ul>
+<li>Integrate attestation into automated software repair pipelines to ensure the integrity of the repair process and the resulting artifacts.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Building:</strong>
+<ul>
+<li>Personal Projects:
+<ul>
+<li><a href="https://durbatuluk1701.github.io/./markdown_monolith/">Markdown Monolith</a>:
+A tool that converts a index/table of contents Markdown files into a single monolithic Markdown file while preserving the original structure. Built in <strong>OCaml</strong>.</li>
+<li><a href="https://github.com/Durbatuluk1701/logical-foundations-grader">Logical Foundations Grader</a>:
+A tool that helps with automatic grading of assignments for the <a href="https://softwarefoundations.cis.upenn.edu/lf-current/index.html"><strong>Logical Foundations</strong></a> course from the Software Foundations series. Built in <strong>Python</strong>.</li>
+<li><a href="https://github.com/Durbatuluk1701/python-cps-tools">Python CPS Tools</a>:
+A collection of tools for writing and analyzing Cyber-Physical Systems (CPS) written in <strong>Python</strong>. In particular it includes Graphs, Trees, Finite Automata, Regex, Petri Nets, and Markov Chains implementations and utilities.</li>
+</ul>
+</li>
+<li>Open Source (various projects in open source I've contributed to):
+<ul>
+<li><a href="https://github.com/rocq-prover/vsrocq">VsRocq</a>:
+A Visual Studio Code extension for the <strong>Rocq</strong> proof assistant.</li>
+<li><a href="https://github.com/ejgallego/rocq-lsp">Rocq-LSP</a>:
+A Language Server Protocol (LSP) implementation for <strong>Rocq</strong>.</li>
+</ul>
+</li>
+<li>Academic Pursuits:
+<ul>
+<li><a href="https://github.com/Durbatuluk1701/bake">Bake</a>:
+A build system for <a href="https://github.com/CakeML/cakeml"><strong>CakeML</strong></a>. Can be utilized with <strong>EasyBakeCakeML</strong> to build verified CakeML projects with ease. Built in <strong>OCaml</strong>.</li>
+<li><a href="https://github.com/Durbatuluk1701/EasyBakeCakeML">EasyBakeCakeML</a>:
+A Rocq library/plugin for generating verified programs that can be extracted to <strong>CakeML</strong>. It provides a thin wrapper around the CakeML standard library and then an extraction (notably unverified in EasyBakeCakeML, although a verified semantic extraction by my collaborator TJ Barclay was developed as part of his PhD work) to CakeML code (annotated with <em>Bake</em> annotations), to compile the extracted CakeML code. Built in <strong>Rocq</strong> and <strong>OCaml</strong>.</li>
+<li><a href="https://github.com/Durbatuluk1701/coq-base64">Base64 Encoding Decoding Library</a>:
+A formally verified Base64 encoding and decoding library in <strong>Rocq</strong>. It provides correctness guaranteees allowing arbitrary strings to be encoded into a custom defined dependent type for the Base64 encoded string and decoded back to the original string without loss of information.</li>
+<li><a href="https://github.com/ku-sldg/copland-spec">Copland Formal Specification</a>:
+A formal specification of the Copland DSL in <strong>Rocq</strong>, including its syntax, operational semantics, and type system. This repository serves as the foundation for verifying properties of Copland protocols and ensuring their correctness.</li>
+<li><a href="https://github.com/ku-sldg/cvm">Copland Virtual Machine</a>:
+An implementation of a verified Copland Virtual Machine in <strong>Rocq</strong>. The CVM executes Copland protocols while maintaining formal guarantees about their behavior and security properties.
+<strong>Rocq</strong>, <strong>OCaml</strong>, and <strong>Verus</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Teaching:</strong>
+<ul>
+<li>Fall 2025 - Teaching Assistant for <a href="https://perry.alexander.name/eecs755/"><strong>EECS 755: Software Modeling and Analysis</strong></a>
+<ul>
+<li>Lectured on <strong>Verified Sorting Algorithms</strong>, <strong>Ltac &amp; Hint Database Automation</strong>, and <strong>Dependent Types</strong> in <strong>Rocq</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="contact">Contact</h3>
+<ul>
+<li><a href="https://github.com/Durbatuluk1701">GitHub</a></li>
+<li>Email: <code>30wthomas@ku.edu</code></li>
+</ul>
+<!-- * [CV (PDF)](/cv.pdf) -->
+</div>
+
+<!-- <div class="recent-updates" style="margin-top: 4rem;">
+  <hr style="border: 0; border-top: 1px dashed #ccc; margin-bottom: 2rem;">
+  <h3>Recent Lab Notes</h3>
+
+  <ul style="list-style: none; padding: 0;">
+    
+    
+
+    
+    
+  </ul>
+
+  <p style="margin-top: 1rem; font-size: 0.9em;">
+    <a href="https://durbatuluk1701.github.io/notes/">View all notes →</a>
+  </p>
+</div> -->
+
+    </main>
+
+    <footer style="margin-top: 4rem; font-size: 0.8em; color: #666; border-top: 1px solid #ccc; padding-top: 1rem;">
+      <p>&copy; 2026 30wthomas@ku.edu | Built with <a
+          href="https://www.getzola.org/">Zola</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
